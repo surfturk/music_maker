@@ -5,7 +5,7 @@ import { provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-
+import App from './components/App'
 
 const store = createStore(
     rootReducer,
