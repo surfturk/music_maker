@@ -13,6 +13,7 @@ class PlaylistsContainer extends Component {
     }
 
     render() {
+       console.log(this.props)
         return (
             <div>
                 Playlists Container
@@ -22,4 +23,4 @@ class PlaylistsContainer extends Component {
     }
 }
 
-export default connect(null, { fetchPlaylists })(PlaylistsContainer);
+export default connect(state => ({playlists: state.playlists}), { fetchPlaylists })(PlaylistsContainer);
