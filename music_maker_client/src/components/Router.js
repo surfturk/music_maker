@@ -2,8 +2,8 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import Home from '../components/Home'
-import PlaylistsList from '../components/PlaylistsList'
 import About from '../components/About'
+import PlaylistsList from '../components/PlaylistsList'
 
 export const Router = () => {
     return (

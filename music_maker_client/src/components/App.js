@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+
+import SongContainer from './SongsContainer'
+
 
 import Router from './Router'
 import Navbar from './Navbar'
@@ -11,7 +13,8 @@ const App = () => {
         <div>   
             <Navbar />
             <Router />
-           
+
+            <SongContainer />
         </div>
     )
 }
