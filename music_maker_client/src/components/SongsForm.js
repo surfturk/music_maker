@@ -23,7 +23,7 @@ export class SongsForm extends Component {
 
     handleSubmit = e => {
        e.preventDefault()
-       this.props.addSongs(this.state)
+       this.props.addSong(this.state)
        this.setState({
         title: '',
         artist: '',
@@ -41,7 +41,9 @@ export class SongsForm extends Component {
                  <label>Song Album:</label>
                <input type='text' value={this.state.album} onChange={this.handleChange} name='album'/> 
                
-               <input type='hidden' value={this.state.playlist_id} onChange={this.handleChange} name='playlist_id'/> 
+               <select onChange={this.handleChange} value={this.state.playlist_id} name="playlist_id">
+                {this.props.playlists.map(playlist => <option key={playlist.id} value={playlist.id}> {playlist.name}</option>)}
+               </select>
                  
                 <input type='submit' value="Create Song" />
             </form>
@@ -49,4 +51,8 @@ export class SongsForm extends Component {
     }
 }
 
-export default connect(null, { addSong })(SongsForm)
+const mapStateToProps = (state) => {
+    return { playlists: state.playlists }
+}
+
+export default connect(mapStateToProps, { addSong })(SongsForm)
