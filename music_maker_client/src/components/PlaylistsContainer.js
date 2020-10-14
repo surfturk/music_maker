@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 import { fetchPlaylists } from '../actions/playlistsActions'
 import PlaylistsForm from './PlaylistsForm'
-import PlaylistsList from './PlaylistsList'
+
 
 class PlaylistsContainer extends Component {
     
@@ -16,8 +16,8 @@ class PlaylistsContainer extends Component {
     render() {
        console.log(this.props)
         return (
-            <div>
-                Playlists Container
+            <div className="playlistForm container">
+                Playlists Form
                 
                 <PlaylistsForm />
             </div>

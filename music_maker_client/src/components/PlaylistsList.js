@@ -1,9 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PlaylistsContainer from './PlaylistsContainer'
 
 const PlaylistsList = ({ playlists }) => {
     return (
         <div>
+             <PlaylistsContainer />
             {playlists.map(playlist => 
             <ul>
                 <li key={playlist.id}>{playlist.name} - {playlist.description}</li>

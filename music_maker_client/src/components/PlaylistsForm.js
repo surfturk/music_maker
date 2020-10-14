@@ -7,8 +7,7 @@ import { addPlaylist } from '../actions/playlistsActions'
     
     state = {
         name: '',
-        description: '',
-        number_of_songs: ''
+        description: '' 
     }
 
     handleChange = e => {
@@ -25,9 +24,8 @@ import { addPlaylist } from '../actions/playlistsActions'
        this.props.addPlaylist(this.state)
        this.setState({
         name: '',
-        description: '',
-        number_of_songs: ''
-       })
+        description: ''
+        })
     }
 
     
@@ -39,8 +37,8 @@ import { addPlaylist } from '../actions/playlistsActions'
                <input type='text' value={this.state.name} onChange={this.handleChange} name='name'/>
                <label>Playlist Description:</label>
                <input type='text' value={this.state.description} onChange={this.handleChange} name='description'/>
-               <label>Playlist Song Count:</label>
-               <input type='text' value={this.state.number_of_songs} onChange={this.handleChange} name='number_of_songs'/>
+               
+               
                <input type='submit' value='Create Playlist'/>
            </form>
         )

@@ -14,7 +14,7 @@ export const addPlaylist = playlist => {
             headers: { 'Content-Type': 'application/json'}
         })
             .then(resp => resp.json())
-            .then(playlists => dispatch({ type: 'ADD_PLAYLIST', payload: playlist}))
+            .then(playlist => dispatch({ type: 'ADD_PLAYLIST', payload: playlist}))
      
       }
 

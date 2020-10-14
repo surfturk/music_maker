@@ -1,14 +1,17 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 import Router from './Router'
-import PlaylistsContainer from './PlaylistsContainer'
-import PlaylistsList from './PlaylistsList';
+import Navbar from './Navbar'
+
+
 
 const App = () => {
     return (
-        <div>
-            <PlaylistsContainer />
+        <div>   
+            <Navbar />
             <Router />
+           
         </div>
     )
 }
