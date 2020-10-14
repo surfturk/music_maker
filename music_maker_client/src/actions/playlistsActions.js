@@ -2,7 +2,10 @@ export const fetchPlaylists = () => {
     return (dispatch) => {
         fetch('http://localhost:3001/playlists')
         .then(resp => resp.json())
-        .then(playlists => dispatch({ type: 'FETCH_PLAYLISTS', payload: playlists}))
+        .then(playlists => {
+            console.log(playlists)
+            dispatch({ type: 'FETCH_PLAYLISTS', payload: playlists})
+        })
     }
 }
 

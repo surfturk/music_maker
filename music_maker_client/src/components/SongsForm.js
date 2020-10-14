@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Select from '@material-ui/core/Select';
 
 import { addSong } from '../actions/songsActions' 
 
@@ -32,6 +33,7 @@ export class SongsForm extends Component {
     }
 
     render() {
+        console.log(this.props.playlists)
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>Song Title:</label>
@@ -41,9 +43,9 @@ export class SongsForm extends Component {
                  <label>Song Album:</label>
                <input type='text' value={this.state.album} onChange={this.handleChange} name='album'/> 
                
-               <select onChange={this.handleChange} value={this.state.playlist_id} name="playlist_id">
+               <Select id="select" onChange={this.handleChange} value={this.state.playlist_id} name="playlist_id">
                 {this.props.playlists.map(playlist => <option key={playlist.id} value={playlist.id}> {playlist.name}</option>)}
-               </select>
+               </Select>
                  
                 <input type='submit' value="Create Song" />
             </form>
@@ -52,6 +54,7 @@ export class SongsForm extends Component {
 }
 
 const mapStateToProps = (state) => {
+   console.log(state)
     return { playlists: state.playlists }
 }
 

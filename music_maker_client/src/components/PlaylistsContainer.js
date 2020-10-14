@@ -9,12 +9,9 @@ import PlaylistsForm from './PlaylistsForm'
 
 class PlaylistsContainer extends Component {
     
-    componentDidMount() {
-        this.props.fetchPlaylists()
-    }
 
     render() {
-       console.log(this.props)
+    
         return (
             <div className="playlistForm container">
                 Playlists Form
