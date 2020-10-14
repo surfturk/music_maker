@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchSongs } from '../actions/SongsActions'
+import SongsForm from './SongsForm'
 
  export class SongsContainer extends Component {
     
@@ -14,6 +15,7 @@ import { fetchSongs } from '../actions/SongsActions'
         return (
             <div>
                 Songs Container
+                <SongsForm />
             </div>
         )
     }
