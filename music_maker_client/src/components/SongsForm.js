@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
+import { addSong } from '../actions/songsActions' 
 
 export class SongsForm extends Component {
 
@@ -46,4 +49,4 @@ export class SongsForm extends Component {
     }
 }
 
-export default SongsForm
+export default connect(null, { addSong })(SongsForm)

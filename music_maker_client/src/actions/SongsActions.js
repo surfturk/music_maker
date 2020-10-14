@@ -19,5 +19,4 @@ export const addSong = song => {
             .then(song => dispatch({ type: 'ADD_SONG', payload: song}))
      
       }
-
-    }
+}
