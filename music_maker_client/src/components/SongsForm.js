@@ -35,7 +35,6 @@ export class SongsForm extends Component {
     }
 
     render() {
-        console.log(this.props.playlists)
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>Song Title:</label>
@@ -56,7 +55,6 @@ export class SongsForm extends Component {
 }
 
 const mapStateToProps = (state) => {
-   console.log(state)
     return { playlists: state.playlists }
 }
 
