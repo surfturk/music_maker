@@ -10,7 +10,7 @@ const Song = ({song}) =>{
               {song.title} <br></br>
               {song.artist} <br></br>
               {song.album} <br></br>
-</div>
+           </div>
         ) 
     }
     else {

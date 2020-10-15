@@ -1,14 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import SongsContainer from './SongsContainer'
+import { NavLink } from 'react-router-dom'
+
 
 const Playlist = ({playlist}) =>{
     
     if (playlist) {
+        console.dir(playlist);
         return(
-            <div>
+            <div className="container">
+                <h5>Playlist Name:</h5>
               {playlist.name} <br></br>
               {playlist.description}
+               <h5>Playlist Songs:</h5>
+               {playlist.songs.map(song => 
+                <li key={song.id}><NavLink to={`/songs/${song.id}`}>{song.title}</NavLink> - {song.artist} - {song.album}</li>
+             )}
             </div>
         ) 
     }
