@@ -5,7 +5,8 @@ import Home from '../components/Home'
 import About from '../components/About'
 import PlaylistsContainer from './PlaylistsContainer'
 import Playlist from './Playlist'
-import { SongsContainer } from './SongsContainer'
+import  SongsContainer  from './SongsContainer'
+import  Song  from './Song'
 
 export const Router = () => {
     return (
@@ -16,6 +17,7 @@ export const Router = () => {
             <Route exact path='/Playlists' component={PlaylistsContainer} />
             <Route exact path='/Playlists/:id' component={Playlist} />
             <Route exact path='/Songs' component={SongsContainer} />
+            <Route exact path='/Songs/:id' component={Song} />
 
         </Switch>
        </div>

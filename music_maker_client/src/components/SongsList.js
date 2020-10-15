@@ -10,7 +10,6 @@ const SongsList = ( {songs} ) => {
                  <li key={song.id}><NavLink to={`/songs/${song.id}`}>{song.title}</NavLink> - {song.artist} - {song.album}</li>
                  )} 
             </ul> 
-            
         </div>
     )
 }
