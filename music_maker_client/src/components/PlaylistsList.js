@@ -8,12 +8,11 @@ const PlaylistsList = ({ playlists }) => {
          <ul>
             {playlists.map(playlist => 
                 <li key={playlist.id}><NavLink to={`/playlists/${playlist.id}`}>{playlist.name}</NavLink> - {playlist.description}</li>
-           
-               )}
+             )}
              </ul>
         </div>
     )
-    debugger;
+
 }
 
     const mapStateToProps = state => {

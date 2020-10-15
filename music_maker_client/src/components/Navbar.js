@@ -17,6 +17,7 @@ export class Navbar extends Component {
                         <li> <NavLink to='/'>Home</NavLink> </li>
                         <li> <NavLink to='/about'>About</NavLink> </li>
                         <li> <NavLink to='/Playlists'>Playlists</NavLink> </li>
+                        <li> <NavLink to='/Songs'>Songs</NavLink> </li>
                         
                     </ul>
                 
