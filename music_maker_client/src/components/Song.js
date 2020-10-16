@@ -3,13 +3,15 @@ import { connect } from 'react-redux'
 
 
 const Song = ({song}) =>{
-    
     if (song) {
         return(
-            <div>
+            <div className="container">
+                <h4>Song:</h4>
               {song.title} <br></br>
               {song.artist} <br></br>
               {song.album} <br></br>
+              <h4>Appears on playlist:</h4>
+              {song.playlist.name}<br></br>
            </div>
         ) 
     }

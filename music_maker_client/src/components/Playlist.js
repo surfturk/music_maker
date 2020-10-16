@@ -6,7 +6,6 @@ import { NavLink } from 'react-router-dom'
 const Playlist = ({playlist}) =>{
     
     if (playlist) {
-        console.dir(playlist);
         return(
             <div className="container">
                 <h5>Playlist Name:</h5>

@@ -13,7 +13,7 @@ export const Router = () => {
         <div>
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
+            <Route exact path='/about' component={About} />
             <Route exact path='/Playlists' component={PlaylistsContainer} />
             <Route exact path='/Playlists/:id' component={Playlist} />
             <Route exact path='/Songs' component={SongsContainer} />
