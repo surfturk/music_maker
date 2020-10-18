@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 
 
 const Song = ({song}) =>{
     if (song) {
         return(
-            <div className="container">
+            <div className="container" >
                 <h4>Song:</h4>
               {song.title} <br></br>
               {song.artist} <br></br>

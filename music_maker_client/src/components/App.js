@@ -1,5 +1,6 @@
 import React, { useEffect} from 'react';
 import { useDispatch } from 'react-redux'
+import Footer from './Footer'
 
 
 import {fetchPlaylists} from '../actions/playlistsActions'
@@ -23,6 +24,7 @@ const App = () => {
         <div>   
             <Navbar />
             <Router />
+            <Footer />
         </div>
     )
 }
