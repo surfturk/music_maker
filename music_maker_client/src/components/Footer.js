@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class Footer extends Component {
   render() {
     return (
-      <footer className="page-footer" class="green">
+      <footer className="page-footer" className="green">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
@@ -40,7 +40,7 @@ export class Footer extends Component {
           </div>
         </div>
         <div className="footer-copyright">
-          <div className="container" class="grey-text text-lighten-4">
+          <div className="container" className="grey-text text-lighten-4">
             © 2020 Music Maker
             <a
               className="grey-text text-lighten-4 right"
