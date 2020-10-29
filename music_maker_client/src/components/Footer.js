@@ -46,6 +46,7 @@ export class Footer extends Component {
               className="grey-text text-lighten-4 right"
               href="https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Check out Jimi on Spotify
             </a>

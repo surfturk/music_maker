@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 import { fetchPlaylists } from "../actions/playlistsActions";
 import { fetchSongs } from "../actions/songsActions";
@@ -19,7 +19,7 @@ const App = () => {
     <div>
       <Navbar />
       <Router />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

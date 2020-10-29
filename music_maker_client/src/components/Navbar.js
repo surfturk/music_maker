@@ -8,20 +8,16 @@ export class Navbar extends Component {
         <div className="NavBar container">
           <ul>
             <li>
-              {" "}
-              <NavLink to="/">Home</NavLink>{" "}
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              {" "}
-              <NavLink to="/about">About</NavLink>{" "}
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              {" "}
-              <NavLink to="/Playlists">Playlists</NavLink>{" "}
+              <NavLink to="/Playlists">Playlists</NavLink>
             </li>
             <li>
-              {" "}
-              <NavLink to="/Songs">Songs</NavLink>{" "}
+              <NavLink to="/Songs">Songs</NavLink>
             </li>
           </ul>
         </div>

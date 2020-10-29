@@ -1,10 +1,9 @@
 import { combineReducers } from "redux";
 
-import { playlistsReducer } from './playlistsReducer'
-import { songsReducer } from './songsReducer'
+import { playlistsReducer } from "./playlistsReducer";
+import { songsReducer } from "./songsReducer";
 
- export const rootReducer = combineReducers({
-    playlists: playlistsReducer,
-    songs: songsReducer
-})
-
+export const rootReducer = combineReducers({
+  playlists: playlistsReducer,
+  songs: songsReducer,
+});
