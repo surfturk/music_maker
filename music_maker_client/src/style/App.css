@@ -1,35 +1,30 @@
 .wrapper {
-    position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
-  }
-  
-  .player {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 100%;
-  }
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
 
-  .page-footer {
-      background-color: 'green';
-     
-  }
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-   footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    
-  } 
+  width: 100%;
+  height: 100%;
+}
 
-  body {
-    text-align: center;
+.page-footer {
+  background-color: "green";
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  text-align: center;
 }
 form {
-    display: inline-block;
-    
+  display: inline-block;
 }
-
-

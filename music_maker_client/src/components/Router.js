@@ -13,11 +13,11 @@ export const Router = () => {
     <div>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route path="/about" component={About} />
         <Route exact path="/Playlists" component={PlaylistsContainer} />
-        <Route exact path="/Playlists/:id" component={Playlist} />
+        <Route path="/Playlists/:id" component={Playlist} />
         <Route exact path="/Songs" component={SongsContainer} />
-        <Route exact path="/Songs/:id" component={Song} />
+        <Route path="/Songs/:id" component={Song} />
       </Switch>
     </div>
   );

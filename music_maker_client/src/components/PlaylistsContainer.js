@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
-import { fetchPlaylists } from "../actions/playlistsActions";
 import PlaylistsForm from "./PlaylistsForm";
 import PlaylistsList from "./PlaylistsList";
 
@@ -18,4 +16,4 @@ class PlaylistsContainer extends Component {
   }
 }
 
-export default connect(null, { fetchPlaylists })(PlaylistsContainer);
+export default PlaylistsContainer;
