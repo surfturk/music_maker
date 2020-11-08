@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
-import { fetchSongs } from "../actions/songsActions";
 import SongsForm from "./SongsForm";
 import SongsList from "./SongsList";
 
@@ -18,4 +16,4 @@ export class SongsContainer extends Component {
   }
 }
 
-export default connect(null, { fetchSongs })(SongsContainer);
+export default SongsContainer;
