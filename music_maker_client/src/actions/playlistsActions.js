@@ -9,20 +9,15 @@ export const fetchPlaylists = () => {
 };
 
 export const addPlaylist = (playlist) => {
-  console.log("b");
   return (dispatch) => {
-    console.log("c");
     fetch("http://localhost:3001/playlists", {
       method: "POST",
       body: JSON.stringify(playlist),
       headers: { "Content-Type": "application/json" },
     })
       .then((resp) => resp.json())
-      .then((playlist) => {
-        console.log("d");
-        return dispatch({ type: "ADD_PLAYLIST", payload: playlist });
-      });
-    console.log("e");
+      .then((playlist) =>
+        dispatch({ type: "ADD_PLAYLIST", payload: playlist })
+      );
   };
-  console.log("f");
 };

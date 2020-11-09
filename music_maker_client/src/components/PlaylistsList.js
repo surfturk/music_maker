@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
+import Like from "./Like";
 
 const PlaylistsList = ({ playlists }) => {
   return (
@@ -8,7 +9,10 @@ const PlaylistsList = ({ playlists }) => {
       <ul>
         {playlists.map((playlist) => (
           <li key={playlist.id}>
-            <NavLink to={`/playlists/${playlist.id}`}>{playlist.name}</NavLink>{" "}
+            <Like />
+            <NavLink to={`/playlists/${playlist.id}`}>
+              {playlist.name}
+            </NavLink>{" "}
             - {playlist.description}
           </li>
         ))}
